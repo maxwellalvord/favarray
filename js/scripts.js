@@ -16,7 +16,18 @@ $(document).ready(function() {
   $(".answer").text(newArray);
   $("#question").show();
   
-  console.log(newArray);
+  const ul = document.getElementById('one');
+
+  for (i = 0; i <= newArray.length; i++) {
+    const li = document.createElement("li"); // create li element.
+
+    li.innerHTML = newArray[i]; // assigning text to li using array value.
+
+    ul.appendChild(li); // append li to ul.
+  }
+
+
+load();
   });
 });
 
