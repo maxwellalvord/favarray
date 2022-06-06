@@ -9,7 +9,14 @@ $(document).ready(function() {
   event.preventDefault();
   let array = [];
   array.push(answer1, answer2, answer3, answer4);
-  console.log(array);
+  array.pop();
+  let newArray = array;
+  
+
+  $(".answer").text(newArray);
+  $("#question").show();
+  
+  console.log(newArray);
   });
 });
 
